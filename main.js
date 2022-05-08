@@ -657,7 +657,7 @@ function main(){
         var guess = x.value;
         x.remove(x.selectedIndex);
 
-        var text = "<span class='grey'>" + guess + "</span>";
+        var text = guess;
         if (is_win(guess)) {
             print(`${guess} is Correct! It took you ${guessno} attempt(s).`, "win")
             guessno += 6
@@ -669,7 +669,7 @@ function main(){
             text += " - <span class='green'>" + guess["Region"] + "</span>";
         }
         else {
-            text += " - <span class='grey'>" + guess["Region"] + "</span>";
+            text += " - " + guess["Region"];
         }
         
         if (is_same_x(guess)) {
@@ -679,7 +679,7 @@ function main(){
             text += " - <span class='yellow'>" + guess["LocationX"] + "</span>";
         }
         else {
-            text += " - <span class='grey'>" + guess["LocationX"] + "</span>";
+            text += " - " + guess["LocationX"];
         }
 
         if (is_same_y(guess)) {
@@ -689,7 +689,7 @@ function main(){
             text += "<span class='yellow'>" + guess["LocationY"] + "</span>";
         }
         else {
-            text += "<span class='grey'>" + guess["LocationY"] + "</span>";
+            text += guess["LocationY"];
         }
 
         text += " - " + direction(guess);

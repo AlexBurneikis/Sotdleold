@@ -1,0 +1,24 @@
+{
+  "name": "sotdle",
+  "version": "1.0.0",
+  "description": "Sea of Thieves wordle inspired guessing game\r www.sotdle.xyz",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexBurneikis/Sotdle.git"
+  },
+  "author": "A Burneikis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexBurneikis/Sotdle/issues"
+  },
+  "homepage": "https://github.com/AlexBurneikis/Sotdle#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
+  }
+}

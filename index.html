@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                text-align: center;
+            }
+            p {
+                font-size:14px;
+                color:rgb(0, 0, 0);
+                font-weight:500;
+                font-style:normal;
+            }
+            .grey {
+                font-weight: 800;
+            }
+            .green {
+                background-color:rgb(0, 255, 0);
+            }
+            .yellow {
+                background-color:rgb(255, 255, 0)
+            }
+        </style>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body style="background-color:gray">
+        <h1>
+            Sotdle
+        </h1>
+        <img id="myimg" src="placeholder.png" alt="Island Image" onload="imgload()" width="300px" height="300px">
+        <br>
+        <label>Guess the Island:</label>
+        <select id="UserInput">
+            <option value="Cannon Cove">Cannon Cove</option>
+            <option value="Crescent Isle">Crescent Isle</option>
+            <option value="Lone Cove">Lone Cove</option>
+            <option value="Mermaids Hideaway">Mermaids Hideaway</option>
+            <option value="Sailors Bounty">Sailors Bounty</option>
+            <option value="Smugglers Bay">Smugglers Bay</option>
+            <option value="Wanderers Refuge">Wanderers Refuge</option>
+            <option value="Crooks Hollow">Crooks Hollow</option>
+            <option value="Devils Ridge">Devils Ridge</option>
+            <option value="Discovery Ridge">Discovery Ridge</option>
+            <option value="Plunder Valley">Plunder Valley</option>
+            <option value="Shark Bait Cove">Shark Bait Cove</option>
+            <option value="Snake Island">Snake Island</option>
+            <option value="Thieves Haven">Thieves Haven</option>
+            <option value="Krakens Fall">Krakens Fall</option>
+            <option value="Marauders Arch">Marauders Arch</option>
+            <option value="Old Faithful Isle">Old Faithful Isle</option>
+            <option value="Shipwreck Bay">Shipwreck Bay</option>
+            <option value="The Crooked Masts">The Crooked Masts</option>
+            <option value="The Sunken Grove">The Sunken Grove</option>
+            <option value="Ashen Reaches">Ashen Reaches</option>
+            <option value="Fetchers Rest">Fetchers Rest</option>
+            <option value="Flintlock Peninsula">Flintlock Peninsula</option>
+            <option value="Rubys Fall">Rubys Fall</option>
+            <option value="The Devils Thirst">The Devils Thirst</option>
+            <option value="Boulder Cay">Boulder Cay</option>
+            <option value="Lagoon of Whispers">Lagoon of Whispers</option>
+            <option value="Lonely Isle">Lonely Isle</option>
+            <option value="Picaroon Palms">Picaroon Palms</option>
+            <option value="Rapier Cay">Rapier Cay</option>
+            <option value="Rum Runner Isle">Rum Runner Isle</option>
+            <option value="Salty Sands">Salty Sands</option>
+            <option value="Sandy Shallows">Sandy Shallows</option>
+            <option value="Sea Dogs Rest">Sea Dogs Rest</option>
+            <option value="Twin Groves">Twin Groves</option>
+            <option value="Barnacle Cay">Barnacle Cay</option>
+            <option value="Booty Isle">Booty Isle</option>
+            <option value="Castaway Isle">Castaway Isle</option>
+            <option value="Booty Isle">Booty Isle</option>
+            <option value="Castaway Isle">Castaway Isle</option>
+            <option value="Chicken Isle">Chicken Isle</option>
+            <option value="Cutlass Cay">Cutlass Cay</option>
+            <option value="Fools Lagoon">Fools Lagoon</option>
+            <option value="Lookout Point">Lookout Point</option>
+            <option value="Mutineer Rock">Mutineer Rock</option>
+            <option value="Old Salts Atoll">Old Salts Atoll</option>
+            <option value="Paradise Spring">Paradise Spring</option>
+            <option value="Black Sand Atoll">Black Sand Atoll</option>
+            <option value="Black Water Enclave">Black Water Enclave</option>
+            <option value="Blind Mans Lagoon">Blind Mans Lagoon</option>
+            <option value="Isle of Last Words">Isle of Last Words</option>
+            <option value="Liars Backbone">Liars Backbone</option>
+            <option value="Plunderers Plight">Plunderers Plight</option>
+            <option value="Scurvy Isley">Scurvy Isley</option>
+            <option value="Shark Tooth Key">Shark Tooth Key</option>
+            <option value="Shiver Retreat">Shiver Retreat</option>
+            <option value="Tri Rock Isle">Tri Rock Isle</option>
+            <option value="Brimstone Rock">Brimstone Rock</option>
+            <option value="Cinder Islet">Cinder Islet</option>
+            <option value="Cursewater Shores">Cursewater Shores</option>
+            <option value="Flames End">Flames End</option>
+            <option value="Forsaken Brink">Forsaken Brink</option>
+            <option value="Glowstone Cay">Glowstone Cay</option>
+            <option value="Magmas Tide">Magmas Tide</option>
+            <option value="Roaring Sands">Roaring Sands</option>
+            <option value="Scorched Pass">Scorched Pass</option>
+            <option value="Keel Haul Fort">Keel Haul Fort</option>
+            <option value="Hidden Spring Keep">Hidden Spring Keep</option>
+            <option value="Sailors Knot Stronghold">Sailors Knot Stronghold</option>
+            <option value="Lost Gold Fort">Lost Gold Fort</option>
+            <option value="Fort of The Damned">Fort of The Damned</option>
+            <option value="The Crows Nest Fortress">The Crows Nest Fortress</option>
+            <option value="Skull Keep">Skull Keep</option>
+            <option value="Kraken Watchtower">Kraken Watchtower</option>
+            <option value="Shark Fin Camp">Shark Fin Camp</option>
+            <option value="Molten Sands Fortress">Molten Sands Fortress</option>
+            <option value="Sanctuary Outpost">Sanctuary Outpost</option>
+            <option value="Golden Sands Outpost">Golden Sands Outpost</option>
+            <option value="Plunder Outpost">Plunder Outpost</option>
+            <option value="Ancient Spire Outpost">Ancient Spire Outpost</option>
+            <option value="Galleons Grave Outpost">Galleons Grave Outpost</option>
+            <option value="Dagger Tooth Outpost">Dagger Tooth Outpost</option>
+            <option value="Morrows Peak Outpost">Morrows Peak Outpost</option>
+        </select>
+        <input id="button" type="button" value="Guess" onclick="main()">
+        <p id="guess1"></p>
+        <p id="guess2"></p>
+        <p id="guess3"></p>
+        <p id="guess4"></p>
+        <p id="guess5"></P>
+        <p id="guess6"></p>
+        <h4 id="win"></h4>
+    </body>
+</html>

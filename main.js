@@ -129,7 +129,7 @@ function main() {
       text += guessIsland.LocationY;
     }
 
-    text += ` - ${direction(guessno)}`;
+    text += ` - ${direction(guessIsland)}`;
 
     print(text, `guess${guessno}`);
 
